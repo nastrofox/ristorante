@@ -71,9 +71,13 @@ namespace ristorante
                 string drone = sr.ReadLine();
                 while (drone != null)
                 {
-                    if (drone.Split(';')[6]!="False")
+                    if (drone.Split(';')[6] != "False")
                     {
                         sw.WriteLine(drone);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Eliminazione completata");
                     }
                     drone = sr.ReadLine();
                 }

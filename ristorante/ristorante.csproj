@@ -96,6 +96,12 @@
     <Compile Include="proprietario.Designer.cs">
       <DependentUpon>proprietario.cs</DependentUpon>
     </Compile>
+    <Compile Include="recupera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recupera.Designer.cs">
+      <DependentUpon>recupera.cs</DependentUpon>
+    </Compile>
     <Compile Include="registrazione.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     </Compile>
     <EmbeddedResource Include="proprietario.resx">
       <DependentUpon>proprietario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recupera.resx">
+      <DependentUpon>recupera.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="registrazione.resx">
       <DependentUpon>registrazione.cs</DependentUpon>

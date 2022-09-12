@@ -71,7 +71,7 @@ namespace ristorante
                 string drone = sr.ReadLine();
                 while (drone != null)
                 {
-                    if (drone.Split(';')[6] != "False")
+                    if (drone.Split(';')[6] != "False"&& drone.Split(';')[0]!=godo.Text)
                     {
                         sw.WriteLine(drone);
                     }

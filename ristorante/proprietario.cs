@@ -44,5 +44,15 @@ namespace ristorante
         {
             modifica form6 = new modifica(); this.Visible = false; form6.ShowDialog(); this.Visible = true;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ricerca form6 = new ricerca(); this.Visible = false; form6.ShowDialog(); this.Visible = true;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            elimina form6 = new elimina(); this.Visible = false; form6.ShowDialog(); this.Visible = true;
+        }
     }
 }

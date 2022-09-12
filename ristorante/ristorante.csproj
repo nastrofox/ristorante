@@ -120,6 +120,9 @@
     <EmbeddedResource Include="cliente.resx">
       <DependentUpon>cliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="elimina.resx">
+      <DependentUpon>elimina.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

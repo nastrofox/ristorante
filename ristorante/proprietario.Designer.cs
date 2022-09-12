@@ -36,8 +36,8 @@ namespace ristorante
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.Home = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.Home = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -79,6 +79,7 @@ namespace ristorante
             this.button3.TabIndex = 3;
             this.button3.Text = "Ricerca";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -98,6 +99,7 @@ namespace ristorante
             this.button5.TabIndex = 5;
             this.button5.Text = "Elimina";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label2
             // 
@@ -110,6 +112,15 @@ namespace ristorante
             this.label2.TabIndex = 6;
             this.label2.Text = "Piatti:";
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(293, 368);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(127, 67);
+            this.button6.TabIndex = 11;
+            this.button6.Text = "Recupera piatti eliminati";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // Home
             // 
             this.Home.BackgroundImage = global::ristorante.Properties.Resources.casetta;
@@ -121,15 +132,6 @@ namespace ristorante
             this.Home.Text = "Home";
             this.Home.UseVisualStyleBackColor = true;
             this.Home.Click += new System.EventHandler(this.Home_Click);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(293, 368);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(127, 67);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "Recupera piatti eliminati";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // proprietario
             // 

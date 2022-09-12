@@ -20,20 +20,23 @@ namespace ristorante
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StreamReader sr = new StreamReader("./data/piatti/Primo.txt"); ;
-            string y = sr.ReadLine();
-            string stampa = null;
-            while (y != null)
-            {
-                if (y.Split(';')[5] == "True")
+
+                StreamReader sr = new StreamReader("./data/piatti/Primo.txt"); ;
+                string y = sr.ReadLine();
+                string stampa = null;
+                while (y != null)
                 {
-                    string n = $"Nome: {y.Split(';')[0]}\nPrezzo: {y.Split(';')[1]}\nPortata: {y.Split(';')[2]}\nIngredienti: {y.Split(';')[3]}\nIngredienti: {y.Split(';')[4]}\nIngredienti: {y.Split(';')[5]}\n";
-                    stampa += n + "\n\n";
+                    if (y.Split(';')[6] == "True")
+                    {
+                        string n = $"Nome: {y.Split(';')[0]}\nPrezzo: {y.Split(';')[1]}\nPortata: {y.Split(';')[2]}\nIngredienti: {y.Split(';')[3]}\nIngredienti: {y.Split(';')[4]}\nIngredienti: {y.Split(';')[5]}\n";
+                        stampa += n + "\n\n";
+                    }
+                    y = sr.ReadLine();
                 }
-                y = sr.ReadLine();
-            }
-            sr.Close();
-            MessageBox.Show(stampa);
+                sr.Close();
+                MessageBox.Show(stampa);
+            
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -43,9 +46,9 @@ namespace ristorante
             string stampa = null;
             while (y != null)
             {
-                if (y.Split(';')[7] == "True")
+                if (y.Split(';')[6] == "True")
                 {
-                    string n = $"Nome: {y.Split(';')[0]}\nPrezzo: {y.Split(';')[1]}\nPortata: {y.Split(';')[2]}\nIngredienti: {y.Split(';')[3]}\nIngredienti: {y.Split(';')[4]}\nIngredienti: {y.Split(';')[5]}\nIngredienti: {y.Split(';')[6]}";
+                    string n = $"Nome: {y.Split(';')[0]}\nPrezzo: {y.Split(';')[1]}\nPortata: {y.Split(';')[2]}\nIngredienti: {y.Split(';')[3]}\nIngredienti: {y.Split(';')[4]}\nIngredienti: {y.Split(';')[5]}\n";
                     stampa += n + "\n\n";
                 }
                 y = sr.ReadLine();
@@ -61,9 +64,9 @@ namespace ristorante
             string stampa = null;
             while (y != null)
             {
-                if (y.Split(';')[7] == "True")
+                if (y.Split(';')[6] == "True")
                 {
-                    string n = $"Nome: {y.Split(';')[0]}\nPrezzo: {y.Split(';')[1]}\nPortata: {y.Split(';')[2]}\nIngredienti: {y.Split(';')[3]}\nIngredienti: {y.Split(';')[4]}\nIngredienti: {y.Split(';')[5]}\nIngredienti: {y.Split(';')[6]}";
+                    string n = $"Nome: {y.Split(';')[0]}\nPrezzo: {y.Split(';')[1]}\nPortata: {y.Split(';')[2]}\nIngredienti: {y.Split(';')[3]}\nIngredienti: {y.Split(';')[4]}\nIngredienti: {y.Split(';')[5]}\n";
                     stampa += n + "\n\n";
                 }
                 y = sr.ReadLine();
@@ -79,15 +82,21 @@ namespace ristorante
             string stampa = null;
             while (y != null)
             {
-                if (y.Split(';')[7] == "True")
+                if (y.Split(';')[6] == "True")
                 {
-                    string n = $"Nome: {y.Split(';')[0]}\nPrezzo: {y.Split(';')[1]}\nPortata: {y.Split(';')[2]}\nIngredienti: {y.Split(';')[3]}\nIngredienti: {y.Split(';')[4]}\nIngredienti: {y.Split(';')[5]}\nIngredienti: {y.Split(';')[6]}";
+                    string n = $"Nome: {y.Split(';')[0]}\nPrezzo: {y.Split(';')[1]}\nPortata: {y.Split(';')[2]}\nIngredienti: {y.Split(';')[3]}\nIngredienti: {y.Split(';')[4]}\nIngredienti: {y.Split(';')[5]}\n";
                     stampa += n + "\n\n";
                 }
                 y = sr.ReadLine();
             }
             sr.Close();
             MessageBox.Show(stampa);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+            proprietario form6 = new proprietario(); this.Visible = false; form6.ShowDialog(); this.Visible = true;
         }
     }
 }

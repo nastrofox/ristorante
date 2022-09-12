@@ -51,7 +51,7 @@ namespace ristorante
             if (portata == "Primo" || portata == "Secondo" || portata == "Contorno" || portata == "Dolce")
             {
                 StreamWriter sw = new StreamWriter($@".\data\piatti\{portata}.txt");
-                sw.WriteLine(piatto+";"+Prezzo+";" + ingrediente1 + ";" + ingrediente2 + ";" + ingrediente3 + ";" + ingrediente4);
+                sw.WriteLine(piatto + ";" + Prezzo + ";" + ingrediente1 + ";" + ingrediente2 + ";" + ingrediente3 + ";" + ingrediente4+";True") ;
                 sw.Close();
                 MessageBox.Show("Piatto salvato con successo");
                 proprietario form6 = new proprietario(); this.Visible = false; form6.ShowDialog(); this.Visible = true;

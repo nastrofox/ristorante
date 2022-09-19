@@ -37,9 +37,9 @@ namespace ristorante
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(79, 237);
+            this.button2.Location = new System.Drawing.Point(80, 245);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(155, 27);
+            this.button2.Size = new System.Drawing.Size(170, 27);
             this.button2.TabIndex = 30;
             this.button2.Text = "Ellimina temporaneamente";
             this.button2.UseVisualStyleBackColor = true;
@@ -48,7 +48,8 @@ namespace ristorante
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(94, 94);
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label11.Location = new System.Drawing.Point(109, 149);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(125, 13);
             this.label11.TabIndex = 29;
@@ -56,14 +57,15 @@ namespace ristorante
             // 
             // godo
             // 
-            this.godo.Location = new System.Drawing.Point(102, 165);
+            this.godo.Location = new System.Drawing.Point(112, 192);
             this.godo.Name = "godo";
             this.godo.Size = new System.Drawing.Size(117, 20);
             this.godo.TabIndex = 28;
+            this.godo.TextChanged += new System.EventHandler(this.godo_TextChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(92, 302);
+            this.button1.Location = new System.Drawing.Point(92, 278);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(142, 22);
             this.button1.TabIndex = 31;
@@ -75,11 +77,13 @@ namespace ristorante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(368, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.godo);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "elimina";
             this.Text = "elimina";
             this.ResumeLayout(false);

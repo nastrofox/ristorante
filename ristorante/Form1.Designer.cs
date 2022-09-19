@@ -78,7 +78,7 @@ namespace ristorante
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(262, 268);
+            this.button2.Location = new System.Drawing.Point(273, 268);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(156, 83);
             this.button2.TabIndex = 11;
@@ -149,7 +149,6 @@ namespace ristorante
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = global::ristorante.Properties.Resources.a;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(467, 618);
             this.Controls.Add(this.label7);

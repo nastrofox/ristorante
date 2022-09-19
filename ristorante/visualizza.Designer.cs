@@ -83,14 +83,16 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(82, 41);
             this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
+            this.button5.Text = "Home";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(65, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(313, 29);
@@ -100,7 +102,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Black;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(119, 142);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(215, 29);
@@ -111,6 +115,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(467, 618);
             this.Controls.Add(this.label2);

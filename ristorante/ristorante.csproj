@@ -82,12 +82,6 @@
     <Compile Include="modifica.Designer.cs">
       <DependentUpon>modifica.cs</DependentUpon>
     </Compile>
-    <Compile Include="ordinazione.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ordinazione.Designer.cs">
-      <DependentUpon>ordinazione.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="proprietario.cs">
@@ -137,9 +131,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="modifica.resx">
       <DependentUpon>modifica.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ordinazione.resx">
-      <DependentUpon>ordinazione.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

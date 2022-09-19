@@ -28,7 +28,7 @@ namespace ristorante
                 {
                     if (y.Split(';')[6] == "True")
                     {
-                        string n = $"Nome: {y.Split(';')[0]}\nPrezzo: {y.Split(';')[1]}\nPortata: {y.Split(';')[2]}\nIngredienti: {y.Split(';')[3]}\nIngredienti: {y.Split(';')[4]}\nIngredienti: {y.Split(';')[5]}\n";
+                        string n = $"Nome: {y.Split(';')[0]}\nPrezzo: {y.Split(';')[1]}\ningredienti: {y.Split(';')[2]}\nIngredienti: {y.Split(';')[3]}\nIngredienti: {y.Split(';')[4]}\nIngredienti: {y.Split(';')[5]}\n";
                         stampa += n + "\n\n";
                     }
                     y = sr.ReadLine();

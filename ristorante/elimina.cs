@@ -87,5 +87,10 @@ namespace ristorante
                 System.IO.File.Move(@".\data\piatti\temp.txt", filename[i]);
             }
         }
+
+        private void godo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

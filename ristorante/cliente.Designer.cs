@@ -33,11 +33,10 @@ namespace ristorante
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
+            this.aggiungiallordine = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.completaordine = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // label3
@@ -82,78 +81,65 @@ namespace ristorante
             this.label4.BackColor = System.Drawing.Color.Black;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(22, 174);
+            this.label4.Location = new System.Drawing.Point(44, 167);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 31);
             this.label4.TabIndex = 6;
             this.label4.Text = "Ordina:";
             // 
-            // button1
+            // aggiungiallordine
             // 
-            this.button1.Location = new System.Drawing.Point(28, 224);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 41);
-            this.button1.TabIndex = 7;
-            this.button1.UseVisualStyleBackColor = true;
+            this.aggiungiallordine.Location = new System.Drawing.Point(50, 269);
+            this.aggiungiallordine.Name = "aggiungiallordine";
+            this.aggiungiallordine.Size = new System.Drawing.Size(96, 41);
+            this.aggiungiallordine.TabIndex = 7;
+            this.aggiungiallordine.Text = "aggiungi piatto all\'ordine";
+            this.aggiungiallordine.UseVisualStyleBackColor = true;
+            this.aggiungiallordine.Click += new System.EventHandler(this.aggiungiallordine_Click);
             // 
-            // label5
+            // textBox1
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Black;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(239, 174);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 31);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Menù:";
+            this.textBox1.Location = new System.Drawing.Point(50, 218);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 10;
             // 
-            // button3
+            // completaordine
             // 
-            this.button3.Location = new System.Drawing.Point(238, 224);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 41);
-            this.button3.TabIndex = 10;
-            this.button3.UseVisualStyleBackColor = true;
+            this.completaordine.Location = new System.Drawing.Point(50, 423);
+            this.completaordine.Name = "completaordine";
+            this.completaordine.Size = new System.Drawing.Size(148, 29);
+            this.completaordine.TabIndex = 12;
+            this.completaordine.Text = "completa ordine";
+            this.completaordine.UseVisualStyleBackColor = true;
+            this.completaordine.Click += new System.EventHandler(this.completaordine_Click);
             // 
-            // button2
+            // listView1
             // 
-            this.button2.Location = new System.Drawing.Point(458, 224);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 41);
-            this.button2.TabIndex = 12;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Black;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(459, 174);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 31);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Conto:";
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(293, 12);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(515, 495);
+            this.listView1.TabIndex = 14;
+            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(649, 519);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(820, 519);
+            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.completaordine);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.aggiungiallordine);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "cliente";
             this.Text = "cliente";
+            this.Load += new System.EventHandler(this.cliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,10 +151,10 @@ namespace ristorante
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button aggiungiallordine;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button completaordine;
+        private System.Windows.Forms.Button visualizzamenu;
+        private System.Windows.Forms.ListView listView1;
     }
 }

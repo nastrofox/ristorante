@@ -32,6 +32,10 @@ namespace ristorante
             else
             {
                 MessageBox.Show("Recupero effettuato");
+                this.Hide();
+                mam ag = new mam();
+                ag.ShowDialog();
+                this.Close();
             }
 
         }
@@ -58,6 +62,7 @@ namespace ristorante
             sw.Close();
             System.IO.File.Delete(filename);
             System.IO.File.Move(@".\data\piatti\temp.txt", filename);
+            
         }
     }
 }

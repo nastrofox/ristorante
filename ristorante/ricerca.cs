@@ -58,6 +58,10 @@ namespace ristorante
                     string stampa = null;
                     stampa += n + "\n\n";
                     MessageBox.Show(stampa);
+                    this.Hide();
+                    mam ag = new mam();
+                    ag.ShowDialog();
+                    this.Close();
                 }
                 else
                 {

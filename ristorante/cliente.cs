@@ -108,6 +108,10 @@ namespace ristorante
             MessageBox.Show($"{prezzofinale}"+"$");
 
             prezzofinale = 0;
+            this.Hide();
+            Form1 ag = new Form1();
+            ag.ShowDialog();
+            this.Close();
         }
 
         public string Ricerca(string filename)

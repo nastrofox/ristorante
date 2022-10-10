@@ -92,5 +92,13 @@ namespace ristorante
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            proprietario ag = new proprietario();
+            ag.ShowDialog();
+            this.Close();
+        }
     }
 }

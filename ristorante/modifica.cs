@@ -85,6 +85,10 @@ namespace ristorante
             else
             {
                 MessageBox.Show("Piatto modificato con successo");
+                this.Hide();
+                proprietario ag = new proprietario();
+                ag.ShowDialog();
+                this.Close();
             }
         }
     }

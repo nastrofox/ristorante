@@ -96,7 +96,10 @@ namespace ristorante
         private void button5_Click(object sender, EventArgs e)
         {
 
-            proprietario form6 = new proprietario(); this.Visible = false; form6.ShowDialog(); this.Visible = true;
+            this.Hide();
+            proprietario ag = new proprietario();
+            ag.ShowDialog();
+            this.Close();
         }
     }
 }

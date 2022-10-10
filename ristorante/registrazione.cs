@@ -46,11 +46,11 @@ namespace ristorante
             tre.Clear();
 
 
-            mam form6 = new mam(); 
-            this.Visible = false; 
-            form6.ShowDialog(); 
-            this.Visible = true;
-            
+            this.Hide();
+            mam ag = new mam();
+            ag.ShowDialog();
+            this.Close();
+
         }
     }
 }
